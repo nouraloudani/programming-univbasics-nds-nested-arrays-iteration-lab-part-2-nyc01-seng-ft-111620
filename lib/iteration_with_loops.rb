@@ -10,8 +10,11 @@ week_index = 0
       if src[week_index][hour_index] < min_temp
         min_temp = src[week_index][hour_index]
         results_array << min_temp
+        p results_array
       end
-      p results_array
+      hour_index += 1
     end
+    week_index += 1
   end
+
 end
