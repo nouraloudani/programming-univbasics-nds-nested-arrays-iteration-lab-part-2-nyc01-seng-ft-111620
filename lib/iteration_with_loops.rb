@@ -9,12 +9,10 @@ week_index = 0
     while hour_index < src[week_index].length do 
       if src[week_index][hour_index] < min_temp
         min_temp = src[week_index][hour_index]
-        results_array << min_temp
         p results_array
       end
       hour_index += 1
     end
     week_index += 1
   end
-
 end
